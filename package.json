@@ -2,7 +2,7 @@
   "name": "whodis-react-storage-browser",
   "author": "whodisio",
   "description": "React hooks and components for secure, best practices authentication in seconds",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "repository": "whodisio/whodis-react-storage-browser",
   "homepage": "https://github.com/whodisio/whodis-react-storage-browser",
   "keywords": [
