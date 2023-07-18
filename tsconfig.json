@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "importsNotUsedAsValues": "remove",
+    "noPropertyAccessFromIndexSignature": false,
+    "noUncheckedIndexedAccess": false, // TODO: turn back on once cross-sha256 dependency does not cause issues
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "exactOptionalPropertyTypes": false,
+    "noImplicitOverride": false,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "target": "es6",
+    "jsx": "react",
+    "skipLibCheck": true,
+    "lib": [
+      "dom",
+      "es7"
+    ],
+  },
+  "extends": "@tsconfig/node-lts-strictest/tsconfig.json",
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "dist",
+    "coverage",
+    "node_modules"
+  ]
+}
