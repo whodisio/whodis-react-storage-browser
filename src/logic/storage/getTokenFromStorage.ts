@@ -3,6 +3,7 @@ import { getCookie } from 'simple-cookie-client';
 import { isServerSideRendering } from '../../logic/env/isServerSideRendering';
 import { deleteSynchronizationCookie } from '../../logic/synchronization/deleteSynchronizationCookie';
 import { isTokenSynchronized } from '../../logic/synchronization/isTokenSynchronized';
+import { loadAntiCsrfTokenFromQueryParamsIfNeeded } from '../queryparams/loadAntiCsrfTokenFromQueryParamsIfNeeded';
 import { TOKEN_STORAGE_KEY } from './key';
 import { setTokenToStorage } from './setTokenToStorage';
 
@@ -19,6 +20,9 @@ import { setTokenToStorage } from './setTokenToStorage';
 export const getTokenFromStorage = (): string | null => {
   // handle getting the token on client-side
   if (!isServerSideRendering()) {
+    // try and load the anti-csrf-token into local storage from query params if present (e.g., from oidc auth redirect)
+    loadAntiCsrfTokenFromQueryParamsIfNeeded();
+
     // try and find the anti-csrf-token from local storage
     const antiCsrfToken = localStorage.getItem(TOKEN_STORAGE_KEY);
     if (!antiCsrfToken || antiCsrfToken === 'null') {
