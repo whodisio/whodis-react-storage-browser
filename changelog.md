@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/whodisio/whodis-react-storage-browser/compare/v0.1.2...v0.1.3) (2023-09-24)
+
+
+### Bug Fixes
+
+* **deps:** bump simple-jwt-auth to eliminate buffer missing error ([bedf503](https://github.com/whodisio/whodis-react-storage-browser/commit/bedf5032a323b8938e85a5e30c68348d48688e2a))
+
 ## [0.1.2](https://github.com/whodisio/whodis-react-storage-browser/compare/v0.1.1...v0.1.2) (2023-09-24)
 
 
