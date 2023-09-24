@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/whodisio/whodis-react-storage-browser/compare/v0.1.1...v0.1.2) (2023-09-24)
+
+
+### Bug Fixes
+
+* **deps:** bump deps per npm audit and react-native import support ([517245d](https://github.com/whodisio/whodis-react-storage-browser/commit/517245d10287b47b3c78bc9e45df09bc9b9ef117))
+
 ## 0.1.1 (2023-09-22)
 
 
